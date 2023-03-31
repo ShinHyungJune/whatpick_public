@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage manage_detail service1 service1_detail">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <a href="javascript:window.history.back();" class="back-btn">
+                        <i class="xi-arrow-left"></i>
+                    </a>
+                    <p class="title scd5">
+                        이차어때
+                    </p>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">3</li>
+                        <li class="th">2021. 02. 27  03:00</li>
+                        <li class="th">ASDE1234</li>
+                        <li class="th">00도 0000</li>
+                        <li class="th">
+                            <a href="https://www.whatpick.com/sdfsdfsdfs1" target="_blank">https://www.whatpick.com/sdfsdfsdfs1</a>
+                        </li>
+                        <li class="th">-</li>
+                        <li class="th">-</li>
+                    </ul>
+                </div>
+                <div class="form-wrap">
+                    <form action="">
+                        <ul class="form-box">
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>신청할 매물의 URL</p>
+                                </div>
+                                <div class="user">
+                                    <p>https://</p>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>매물의 차량번호</p>
+                                </div>
+                                <div class="user">
+                                    <p>00도 0000</p>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>코멘트</p>
+                                </div>
+                                <div class="user">
+                                    <pre>로그인 페이지에 있는 회원가입 버튼을 누르시면 휴대폰 본인 인증과 함께 간단한 정보 입력
+                                        후 왓픽 회운으로 가입하실 수 있습니다.</pre>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="form-box">
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>관리자 명</p>
+                                </div>
+                                <div class="user">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="confirm-checklist">
+                                    <h3 class="title scd5">
+                                        이차어때 체크리스트
+                                    </h3>
+                                    <ul class="checklist">
+                                        <li class="col-group">
+                                            <p class="default">
+                                                실제 보유 상사
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist1_1">
+                                                    <input type="radio" id="checklist1_1" name="checklist1">
+                                                    <span class="radio-icon"></span>
+                                                    같음
+                                                </label>
+                                                <label for="checklist1_2">
+                                                    <input type="radio" id="checklist1_2" name="checklist1">
+                                                    <span class="radio-icon"></span>
+                                                    다름
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                실제 담당 딜러
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist2_1">
+                                                    <input type="radio" id="checklist2_1" name="checklist2">
+                                                    <span class="radio-icon"></span>
+                                                    같음
+                                                </label>
+                                                <label for="checklist2_2">
+                                                    <input type="radio" id="checklist2_2" name="checklist2">
+                                                    <span class="radio-icon"></span>
+                                                    다름
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                주행 거리
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist3_1">
+                                                    <input type="radio" id="checklist3_1" name="checklist3">
+                                                    <span class="radio-icon"></span>
+                                                    같음
+                                                </label>
+                                                <label for="checklist3_2">
+                                                    <input type="radio" id="checklist3_2" name="checklist3">
+                                                    <span class="radio-icon"></span>
+                                                    다름
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                연식
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist4_1">
+                                                    <input type="radio" id="checklist4_1" name="checklist4">
+                                                    <span class="radio-icon"></span>
+                                                    같음
+                                                </label>
+                                                <label for="checklist4_2">
+                                                    <input type="radio" id="checklist4_2" name="checklist4">
+                                                    <span class="radio-icon"></span>
+                                                    다름
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                차량연료
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist5_1">
+                                                    <input type="radio" id="checklist5_1" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    가솔린
+                                                </label>
+                                                <label for="checklist5_2">
+                                                    <input type="radio" id="checklist5_2" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    디젤
+                                                </label>
+                                                <label for="checklist5_3">
+                                                    <input type="radio" id="checklist5_3" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    LPG
+                                                </label>
+                                                <label for="checklist5_4">
+                                                    <input type="radio" id="checklist5_4" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    하이브리드
+                                                </label>
+                                                <label for="checklist5_5">
+                                                    <input type="radio" id="checklist5_5" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    전기
+                                                </label>
+                                                <label for="checklist5_6">
+                                                    <input type="radio" id="checklist5_6" name="checklist5">
+                                                    <span class="radio-icon"></span>
+                                                    기타
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                검사유효기간
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist6_1">
+                                                    <input type="radio" id="checklist6_1" name="checklist6">
+                                                    <span class="radio-icon"></span>
+                                                    1년
+                                                </label>
+                                                <label for="checklist6_2">
+                                                    <input type="radio" id="checklist6_2" name="checklist6">
+                                                    <span class="radio-icon"></span>
+                                                    2년
+                                                </label>
+                                                <label for="checklist6_3">
+                                                    <input type="radio" id="checklist6_3" name="checklist6">
+                                                    <span class="radio-icon"></span>
+                                                    4년
+                                                </label>
+                                                <label for="checklist6_4">
+                                                    <input type="radio" id="checklist6_4" name="checklist6">
+                                                    <span class="radio-icon"></span>
+                                                    기타
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                특별이력
+                                            </p>
+                                            <ul class="checklist half">
+                                                <li class="col-group">
+                                                    <p class="default">
+                                                        용도 이력
+                                                    </p>
+                                                    <div class="user col-group">
+                                                        <label for="checklist7_1">
+                                                            <input type="radio" id="checklist7_1" name="checklist7">
+                                                            <span class="radio-icon"></span>
+                                                            있음
+                                                        </label>
+                                                        <label for="checklist7_2">
+                                                            <input type="radio" id="checklist7_2" name="checklist7">
+                                                            <span class="radio-icon"></span>
+                                                            없음
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col-group">
+                                                    <p class="default">
+                                                        침수(보험이력)
+                                                    </p>
+                                                    <div class="user col-group">
+                                                        <label for="checklist8_1">
+                                                            <input type="radio" id="checklist8_1" name="checklist8">
+                                                            <span class="radio-icon"></span>
+                                                            있음
+                                                        </label>
+                                                        <label for="checklist8_2">
+                                                            <input type="radio" id="checklist8_2" name="checklist8">
+                                                            <span class="radio-icon"></span>
+                                                            없음
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-group compare">
+                                            <p class="default"> 
+                                                차량가격
+                                            </p>
+                                            <div class="user col-group">
+                                                <p>고객제공사이트</p>
+                                                <div class="compare-icon col-group">
+                                                    <label for="checklist_compare_1"><!-- 고객제공사이트가 높을 시-->
+                                                        <input type="radio" name="checklist_compare" id="checklist_compare_1">
+                                                        <span class="radio-icon"></span>
+                                                        <i class="xi-angle-right"></i>
+                                                    </label>
+                                                    <label for="checklist_compare_2"><!-- 가격이 동일할 시 -->
+                                                        <input type="radio" name="checklist_compare" id="checklist_compare_2">
+                                                        <span class="radio-icon"></span>
+                                                        <i class="xi-drag-handle"></i>
+                                                    </label>
+                                                    <label for="checklist_compare_3"><!-- 딜러전산가가 높을 시-->
+                                                        <input type="radio" name="checklist_compare" id="checklist_compare_3">
+                                                        <span class="radio-icon"></span>
+                                                        <i class="xi-angle-left"></i>
+                                                    </label>
+                                                </div>
+                                                <p>딜러전산가</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                사고, 교환, 수리
+                                            </p>
+                                            <div class="user row-group">
+                                                <div class="col-group np">
+                                                    <label for="checklist9_1">
+                                                        <input type="radio" id="checklist9_1" name="checklist9">
+                                                        <span class="radio-icon"></span>
+                                                        같음
+                                                    </label>
+                                                    <label for="checklist9_2">
+                                                        <input type="radio" id="checklist9_2" name="checklist9">
+                                                        <span class="radio-icon"></span>
+                                                        다름
+                                                    </label>
+                                                </div>
+                                                <div class="comment">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                세부 상태
+                                            </p>
+                                            <div class="user row-group">
+                                                <div class="col-group np">
+                                                    <label for="checklist10_1">
+                                                        <input type="radio" id="checklist10_1" name="checklist10">
+                                                        <span class="radio-icon"></span>
+                                                        같음
+                                                    </label>
+                                                    <label for="checklist10_2">
+                                                        <input type="radio" id="checklist10_2" name="checklist10">
+                                                        <span class="radio-icon"></span>
+                                                        다름
+                                                    </label>
+                                                </div>
+                                                <div class="comment">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                성능점검 보험료
+                                            </p>
+                                            <div class="user col-group">
+                                                <label for="checklist11_1">
+                                                    <input type="radio" id="checklist11_1" name="checklist11">
+                                                    <span class="radio-icon"></span>
+                                                    같음
+                                                </label>
+                                                <label for="checklist11_2">
+                                                    <input type="radio" id="checklist11_2" name="checklist11">
+                                                    <span class="radio-icon"></span>
+                                                    다름
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-group">
+                                            <p class="default">
+                                                코멘트
+                                            </p>
+                                            <div class="user row-group">
+                                                <div class="comment">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                    <button type="submit" class="submit-btn">답변 등록하기</button>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            //파일 업로드
+            let thumbnail_img   = [];
+            let detail_back_img = [];
+            let detail_img      = [];
+
+            function file_change(type){
+                const files    = $("#"+type+"_file")[0].files;
+                const filesArr = Array.prototype.slice.call(files);
+
+                filesArr.forEach(function(f){
+                    if(!f.type.match("image.*")){
+                        alert("이미지 파일만 업로드 가능합니다.");
+                        return;
+                    }
+
+                    if(type == "thumbnail"){
+                        thumbnail_img.push(f);
+                    }
+
+                    const reader  = new FileReader();
+                    reader.onload = function(e){
+                        let str = "<li class='col-group "+type+"_img_li'>\
+                                        <p>"+f.name+"</p>\
+                                        <button type='button' class='"+type+"_img_del'>\
+                                            <i class='xi-close'></i>\
+                                        </button>\
+                                    </li>";
+
+                        $(".file-upload-list").show();
+                        $("#"+type+"_ul").append(str);
+                    }
+
+                    reader.readAsDataURL(f);
+
+                });
+            }
+
+            //썸네일 이미지 x버튼
+            $(document).on("click", ".thumbnail_img_del", function(){
+                const idx = $(".thumbnail_img_del").index(this);
+
+                thumbnail_img.splice(idx, 1);
+                $("#file_upload").val("");
+                $(".thumbnail_img_li").eq(idx).remove();
+                
+                if(thumbnail_img.length == 0){
+                    $(".file-upload-list").hide();
+                }
+
+            });
+        </script>
+    </div>
+</body>
+</html>

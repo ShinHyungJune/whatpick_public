@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage manage_detail inquiry3 inquiry3_detail">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <a href="javascript:window.history.back();" class="back-btn">
+                        <i class="xi-arrow-left"></i>
+                    </a>
+                    <p class="title scd5">
+                        제안하기
+                    </p>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">3</li>
+                        <li class="th">2021. 02. 27  03:00</li>
+                        <li class="th">ASDE1234</li>
+                        <li class="th">기능 제안</li>
+                        <li class="th">자주묻는질문에서 궁금하신 정보가 없다면 1:1문의로 문의주세요..</li>
+                    </ul>
+                </div>
+                <div class="form-wrap">
+                    <ul class="form-box">
+                        <li class="col-group">
+                            <div class="default">
+                                <p>유형</p>
+                            </div>
+                            <div class="user">
+                                <p>기능 제안</p>
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>제목</p>
+                            </div>
+                            <div class="user">
+                                <p>회원가입은 어떻게 하나요?</p>
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>내용</p>
+                            </div>
+                            <div class="user">
+                                <pre>로그인 페이지에 있는 회원가입 버튼을 누르시면 휴대폰 본인 인증과 함께 간단한 정보 입력
+                                    후 왓픽 회운으로 가입하실 수 있습니다.</pre>
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>첨부파일</p>
+                            </div>
+                            <div class="user">
+                                <ul class="file-download col-group">
+                                    <li>
+                                        <a href="" download="">
+                                            <p>첨부파일.jpg</p>
+                                            <i class="xi-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" download="">
+                                            <p>첨부파일.jpg</p>
+                                            <i class="xi-download"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" download="">
+                                            <p>첨부파일.jpg</p>
+                                            <i class="xi-download"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            //파일 업로드
+            let thumbnail_img   = [];
+            let detail_back_img = [];
+            let detail_img      = [];
+
+            function file_change(type){
+                const files    = $("#"+type+"_file")[0].files;
+                const filesArr = Array.prototype.slice.call(files);
+
+                filesArr.forEach(function(f){
+                    if(!f.type.match("image.*")){
+                        alert("이미지 파일만 업로드 가능합니다.");
+                        return;
+                    }
+
+                    if(type == "thumbnail"){
+                        thumbnail_img.push(f);
+                    }
+
+                    const reader  = new FileReader();
+                    reader.onload = function(e){
+                        let str = "<li class='col-group "+type+"_img_li'>\
+                                        <p>"+f.name+"</p>\
+                                        <button type='button' class='"+type+"_img_del'>\
+                                            <i class='xi-close'></i>\
+                                        </button>\
+                                    </li>";
+
+                        $(".file-upload-list").show();
+                        $("#"+type+"_ul").append(str);
+                    }
+
+                    reader.readAsDataURL(f);
+
+                });
+            }
+
+            //썸네일 이미지 x버튼
+            $(document).on("click", ".thumbnail_img_del", function(){
+                const idx = $(".thumbnail_img_del").index(this);
+
+                thumbnail_img.splice(idx, 1);
+                $("#file_upload").val("");
+                $(".thumbnail_img_li").eq(idx).remove();
+                
+                if(thumbnail_img.length == 0){
+                    $(".file-upload-list").hide();
+                }
+
+            });
+        </script>
+    </div>
+</body>
+</html>

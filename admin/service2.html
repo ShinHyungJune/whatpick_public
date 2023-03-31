@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage service2">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <div class="menu-wrap col-group">
+                        <p class="title scd5">
+                            동행서비스
+                        </p>
+                        <ul class="tab-link col-group">
+                            <li class="active" data-tab="tab_1">전체</li>
+                            <li data-tab="tab_2">결제</li>
+                            <li data-tab="tab_3">상담</li>
+                            <li data-tab="tab_4">배정</li>
+                            <li data-tab="tab_5">완료</li>
+                        </ul>
+                    </div>
+                    <div class="search-wrap">
+                        <form action="">
+                            <input type="text" placeholder="검색어를 입력해주세요">
+                            <a href="" class="search-btn">
+                                <i class="xi-search"></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">번호</li>
+                        <li class="th">등록일</li>
+                        <li class="th">아이디</li>
+                        <li class="th">분류</li>
+                        <li class="th">현재 진행</li>
+                        <li class="th">진행 상세</li>
+                    </ul>
+                    <div class="tab-content active" id="tab_1">
+                        <ul class="tbody">
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            4
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">완료</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            3
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">배정</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            2
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">상담</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            1
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">결제</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab_2">
+                        <ul class="tbody">
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            1
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">결제</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab_3">
+                        <ul class="tbody">
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            1
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">상담</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab_4">
+                        <ul class="tbody">
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            1
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">배정</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab_5">
+                        <ul class="tbody">
+                            <li>
+                                <a href="service2_detail1.html">
+                                    <ul class="tr col-group">
+                                        <li class="td">
+                                            1
+                                        </li>
+                                        <li class="td">
+                                            <p>
+                                                2021. 02. 27  03:00
+                                            </p>
+                                        </li>
+                                        <li class="td">
+                                            <p>ASDE1234</p>
+                                        </li>
+                                        <li class="td">
+                                            <p>국산 [경차] 레이,모닝</p>
+                                        </li>
+                                        <li class="td">
+                                            <span class="service-label">완료</span>
+                                        </li>
+                                        <li class="td">
+                                            <ul class="step-list col-group">
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">결제</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">상담</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">배정</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                                <li class="col-group">
+                                                    [
+                                                    <p class="default">완료</p>
+                                                    <p>
+                                                        왓픽관리자
+                                                    </p>
+                                                    <p>
+                                                        2021. 02. 27  03:00
+                                                    </p>
+                                                    ]
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="pagination col-group">
+                    <li class="nav-btn prev"><a href=""><i class="xi-long-arrow-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#" class="">2</a></li>
+                    <li><a href="#" class="">3</a></li>
+                    <li><a href="#" class="">4</a></li>
+                    <li><a href="#" class="">5</a></li>
+                    <li><a href="#" class="">6</a></li>
+                    <li><a href="#" class="">7</a></li>
+                    <li><a href="#" class="">8</a></li>
+                    <li><a href="#" class="">9</a></li>
+                    <li><a href="#" class="">10</a></li>
+                    <li class="nav-btn next"><a href=""><i class="xi-long-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            //탭
+            $('.tab-link li').click(function(){
+                $(".tab-link li").removeClass("active");
+                $(this).addClass("active");
+                var tab_id = $(this).attr('data-tab');
+                $('.tab-content').removeClass('active');
+
+                $(".tab-content#"+tab_id).addClass('active');
+            });
+        </script>
+    </div>
+</body>
+</html>

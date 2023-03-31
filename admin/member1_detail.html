@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage manage_detail member1 member1_detail">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <a href="javascript:window.history.back();" class="back-btn">
+                        <i class="xi-arrow-left"></i>
+                    </a>
+                    <p class="title scd5">
+                        회원관리
+                    </p>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">3</li>
+                        <li class="th">2022.00.00</li>
+                        <li class="th">ASDE1234</li>
+                        <li class="th">김왓픽</li>
+                        <li class="th">ASDE1234@gmail.com</li>
+                        <li class="th">010-0000-0000</li>
+                        <li class="th">일반</li>
+                        <li class="th">탈퇴 2022.00.00</li>
+                    </ul>
+                </div>
+                <div class="form-wrap nonedit">
+                    <ul class="form-box">
+                        <li class="col-group">
+                            <div class="default">
+                                <p>소셜 로그인</p> 
+                            </div>
+                            <div class="user">
+                                <p>일반</p> 
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>아이디</p> 
+                            </div>
+                            <div class="user">
+                                <p>ASDE1234</p> 
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>이름</p> 
+                            </div>
+                            <div class="user">
+                                <p>김왓픽</p> 
+                            </div>
+                        </li>
+                        <li class="col-group gender">
+                            <div class="default">
+                                <p>성별</p> 
+                            </div>
+                            <div class="user col-group">
+                                <label for="gender_1">
+                                    <input type="radio" id="gender_1" name="gender" checked disabled>
+                                    <span class="radio-icon"></span>
+                                    남성
+                                </label>
+                                <label for="gender_2">
+                                    <input type="radio" id="gender_2" name="gender" disabled>
+                                    <span class="radio-icon"></span>
+                                    여성
+                                </label>
+                                <label for="gender_3">
+                                    <input type="radio" id="gender_3" name="gender" disabled>
+                                    <span class="radio-icon"></span>
+                                    공개안함
+                                </label>
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>생년월일</p> 
+                            </div>
+                            <div class="user">
+                                <p>1990.00.00</p> 
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>연락처</p> 
+                            </div>
+                            <div class="user">
+                                <p>010-0000-0000</p> 
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>이메일</p> 
+                            </div>
+                            <div class="user">
+                                <p>whatpick@gmail.com</p> 
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">
+                                <p>주소</p> 
+                            </div>
+                            <div class="user">
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            // 전체체크
+            $(function () {
+                $("#cbx_chkAll").click(function() {
+                    if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+                    else $("input[name=chk]").prop("checked", false);
+                });
+                $("input[name=chk]").click(function() {
+                    var total = $("input[name=chk]").length;
+                    var checked = $("input[name=chk]:checked").length;
+                    
+                    if(total != checked) $("#cbx_chkAll").prop("checked", false);
+                    else $("#cbx_chkAll").prop("checked", true); 
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

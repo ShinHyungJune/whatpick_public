@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage mainpage">
+            <div class="manage-wrap">
+                <div class="title-wrap row-group">
+                    <div class="col-group">
+                        <p class="title scd5">
+                            메인페이지
+                        </p>
+                        <div class="search-wrap">
+                            <form action="">
+                                <input type="text" placeholder="검색어를 입력해주세요">
+                                <a href="" class="search-btn">
+                                    <i class="xi-search"></i>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="btn-wrap col-group">
+                        <a href="mainpage_detail.html" class="add-btn">신규 추가</a>
+                        <a href="#" class="del-btn">선택 삭제</a>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">
+                            <label for="cbx_chkAll">
+                                <input type="checkbox" id="cbx_chkAll" name="chk">
+                                <span class="check-icon"></span>
+                            </label>
+                        </li>
+                        <li class="th">PC 이미지</li>
+                        <li class="th">모바일 이미지</li>
+                        <li class="th">분류</li>
+                        <li class="th">제목</li>
+                    </ul>
+                    <ul class="tbody">
+                        <li>
+                            <a href="mainpage_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        <label for="chk_1">
+                                            <input type="checkbox" id="chk_1" name="chk">
+                                            <span class="check-icon"></span>
+                                        </label>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box pc">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box mb">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <p>WHAT?</p>
+                                    </li>
+                                    <li class="td">
+                                        <div class="row-group">
+                                            <div class="col-group">
+                                                <p>제목 : </p>
+                                                <pre class="title">왓픽은 중고차 구매 도우미 입니다.</pre>
+                                            </div>
+                                            <div class="col-group">
+                                                <p>부제목 : </p>
+                                                <pre class="sub-title">왓픽은 3가지 약속을 꼭 지키겠습니다.</pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mainpage_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        <label for="chk_2">
+                                            <input type="checkbox" id="chk_2" name="chk">
+                                            <span class="check-icon"></span>
+                                        </label>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box pc">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box mb">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <p>WHAT?</p>
+                                    </li>
+                                    <li class="td">
+                                        <div class="row-group">
+                                            <div class="col-group">
+                                                <p>제목 : </p>
+                                                <pre class="title">왓픽은 중고차 구매 도우미 입니다.</pre>
+                                            </div>
+                                            <div class="col-group">
+                                                <p>부제목 : </p>
+                                                <pre class="sub-title">왓픽은 3가지 약속을 꼭 지키겠습니다.</pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mainpage_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        <label for="chk_3">
+                                            <input type="checkbox" id="chk_3" name="chk">
+                                            <span class="check-icon"></span>
+                                        </label>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box pc">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <div class="img-box mb">
+                                            <img src="images/TEST1.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="td">
+                                        <p>WHAT?</p>
+                                    </li>
+                                    <li class="td">
+                                        <div class="row-group">
+                                            <div class="col-group">
+                                                <p>제목 : </p>
+                                                <pre class="title">왓픽은 중고차 구매 도우미 입니다.</pre>
+                                            </div>
+                                            <div class="col-group">
+                                                <p>부제목 : </p>
+                                                <pre class="sub-title">왓픽은 3가지 약속을 꼭 지키겠습니다.</pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="pagination col-group">
+                    <li class="nav-btn prev"><a href=""><i class="xi-long-arrow-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#" class="">2</a></li>
+                    <li><a href="#" class="">3</a></li>
+                    <li><a href="#" class="">4</a></li>
+                    <li><a href="#" class="">5</a></li>
+                    <li><a href="#" class="">6</a></li>
+                    <li><a href="#" class="">7</a></li>
+                    <li><a href="#" class="">8</a></li>
+                    <li><a href="#" class="">9</a></li>
+                    <li><a href="#" class="">10</a></li>
+                    <li class="nav-btn next"><a href=""><i class="xi-long-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            // 전체체크
+            $(function () {
+                $("#cbx_chkAll").click(function() {
+                    if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+                    else $("input[name=chk]").prop("checked", false);
+                });
+                $("input[name=chk]").click(function() {
+                    var total = $("input[name=chk]").length;
+                    var checked = $("input[name=chk]:checked").length;
+                    
+                    if(total != checked) $("#cbx_chkAll").prop("checked", false);
+                    else $("#cbx_chkAll").prop("checked", true); 
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

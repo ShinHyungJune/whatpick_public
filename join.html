@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="subpage join form">
+            <div class="container">
+                <form action="">
+                    <div class="form-title col-group">
+                        <span class="icon">
+                            <i class="xi-user"></i>
+                        </span>
+                        <p class="scd5">회원가입</p>
+                    </div>
+                    <div class="form-wrap">
+                        <ul class="form-box row-group">
+                            <li class="col-group">
+                                <div class="default">
+                                    이름
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <p class="nonedit">김왓픽</p>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    연락처
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <p class="nonedit">010-0000-0000</p>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    생년월일
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <p class="nonedit">1990.00.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="form-box row-group">
+                            <li class="col-group">
+                                <div class="default">
+                                    아이디
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user col-group">
+                                    <input type="text">
+                                    <button type="button" class="form-btn">중복확인</a>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    비밀번호
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <input type="password">
+                                    <span class="notice wrong">
+                                        사용불가 <i class="xi-security"></i>
+                                    </span>
+                                    <span class="notice correct">
+                                        사용가능 <i class="xi-shield-checked"></i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    비밀번호 확인
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <input type="password">
+                                    <p class="guide">
+                                        영문 대문자와 소문자, 숫자, 특수문자 중 2가지 이상을 조합하여 6~20자로 입력해주세요
+                                    </p>
+                                    <p class="guide wrong">
+                                        비밀번호가 일치하지 않습니다
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="col-group gender">
+                                <div class="default">
+                                    성별
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user col-group">
+                                    <label for="gender_1">
+                                        <input type="radio" id="gender_1" name="gender">
+                                        <span class="radio-icon"></span>
+                                        남성
+                                    </label>
+                                    <label for="gender_2">
+                                        <input type="radio" id="gender_2" name="gender">
+                                        <span class="radio-icon"></span>
+                                        여성
+                                    </label>
+                                    <label for="gender_3">
+                                        <input type="radio" id="gender_3" name="gender">
+                                        <span class="radio-icon"></span>
+                                        공개안함
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    이메일
+                                    <span class="red">*</span>
+                                </div>
+                                <div class="user">
+                                    <input type="email">
+                                </div>
+                            </li>
+                            <li class="col-group addr">
+                                <div class="default">
+                                    주소
+                                </div>
+                                <div class="user row-group">
+                                    <div class="col-group">
+                                        <input type="text" id="postcode" class="postcode" placeholder="우편번호" disabled>
+                                        <button type="button" class="search_addr form-btn" onclick="execDaumPostcode()">
+                                            우편번호 검색
+                                        </button>
+                                    </div>
+                                    <div class="col-group">
+                                        <input type="text" id="roadAddress" placeholder="도로명주소" disabled>
+                                        <input type="text" id="detailAddress" placeholder="상세주소" disabled>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    추천인
+                                </div>
+                                <div class="user">
+                                    <input type="text">
+                                    <p class="guide">
+                                        회원가입 시 4000 POINT를 제공하며, 추천인 등록 시 추가로 1000 POINT를 지급합니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form-footer">
+                        <div class="agree-title col-group">
+                            <p class="title scd5">약관동의</p>
+                            <p class="txt col-group">
+                                회원 이용약관
+                                <a href="" class="scd5">보기</a>
+                            </p>
+                            <p class="txt col-group">
+                                개인정보수집
+                                <a href="" class="scd5">보기</a>
+                            </p>
+                        </div>
+                        <div class="agree-wrap col-group">
+                            <div class="agree-box col-group">
+                                <label for="agree_1">
+                                    <input type="checkbox" id="agree_1" name="agree_list">
+                                    <span class="check-icon"></span>
+                                    이용약관 동의(필수)
+                                </label>
+                                <label for="agree_2">
+                                    <input type="checkbox" id="agree_2" name="agree_list">
+                                    <span class="check-icon"></span>
+                                    개인정보수집 동의 (필수)
+                                </label>
+                                <label for="agree_3">
+                                    <input type="checkbox" id="agree_3" name="agree_list">
+                                    <span class="check-icon"></span>
+                                    마케팅 정보 수신 (선택)
+                                </label>
+                            </div>
+                            <label for="agree_all">
+                                <input type="checkbox" id="agree_all">
+                                    <span class="check-icon"></span>
+                                    전체 동의
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <a href="join_done.html" class="form-submit">가입하기</a>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            // 전체동의
+            $(function () {
+                $("#cbx_chkAll").click(function() {
+                    if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+                    else $("input[name=chk]").prop("checked", false);
+                });
+                $("input[name=chk]").click(function() {
+                    var total = $("input[name=chk]").length;
+                    var checked = $("input[name=chk]:checked").length;
+                    
+                    if(total != checked) $("#cbx_chkAll").prop("checked", false);
+                    else $("#cbx_chkAll").prop("checked", true); 
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

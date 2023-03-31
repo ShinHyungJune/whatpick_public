@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="subpage confirm confirm_apply service_apply form">
+
+            <div class="page-nav container">
+                <ul class="col-group">
+                    <li>WHATPICK</li>
+                    <li><i class="xi-angle-right"></i></li>
+                    <li>동행서비스</li>
+                    <li><i class="xi-angle-right"></i></li>
+                    <li><span class="red">서비스 신청</span></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <form action="">
+                    <div class="notice-box col-group">
+                        <p class="title scd6">동행서비스</p>
+                        <p class="txt">
+                            <span class="scd5">알아보고 있는 차량이 있는 경우(URL이 있는경우)</span> 외 
+                            <span class="scd5">봐둔 매물이 없이 전문가와 매물을 같이 찾을 경우</span>에도 동행서비스를 신청 가능합니다. <br>
+                            아래내용을 작성해주시면 상담 도와드리겠습니다.
+                        </p>
+                    </div>
+                    <ul class="form-box row-group">
+                        <li class="col-group url">
+                            <div class="default">서비스 선택</div>
+                            <div class="user">
+                                <select name="" id="service_option">
+                                    <option value="77,000" value2="국산 [경차] 레이, 모닝">국산 [경차] 레이, 모닝 - 77,000POINT</option>
+                                    <option value="99,000" value2="국산 [준중형/중형] 아반떼, 소나타">국산 [준중형/중형] 아반떼, 소나타 - 99,000POINT</option>
+                                    <option value="121,000" value2="국산 [대형] 그렌저, 제네시스">국산 [대형] 그렌저, 제네시스 - 121,000POINT</option>
+                                    <option value="110,000" value2="수입 [소형] 미니, 골프, 벤츠A">수입 [소형] 미니, 골프, 벤츠A - 110,000POINT</option>
+                                    <option value="132,000" value2="수입 [중형] BMW3/5M, 벤츠C/E">수입 [중형] BMW3/5M, 벤츠C/E - 132,000POINT</option>
+                                    <option value="165,000" value2="수입 [대형] 벤츠S/GLE, BMW7">수입 [대형] 벤츠S/GLE, BMW7 - 165,000POINT</option>
+                                    <option value="220,000" value2="수입 [고성능] M·포르쉐·AMG">수입 [고성능] M·포르쉐·AMG - 220,000POINT</option>
+                                    <option value="1,100,000" value2="수입 [슈퍼카] 페라리, 람보르기니">수입 [슈퍼카] 페라리, 람보르기니 - 1,100,000POINT</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="form-mile col-group">
+                        <div class="left-box col-group">
+                            <p class="title scd5 red">
+                                <span class="scd5 red" id="option_num"></span>point 사용
+                            </p>
+                            <p class="txt" id="option_txt"></p>
+                        </div>
+                        <div class="right-box col-group">
+                            <div class="mile-state col-group">
+                                <p class="txt">보유 마일리지</p>
+                                <p class="title scd5">
+                                    <span class="scd5">2,400</span> POINT
+                                </p>
+                            </div>
+                            <a href="miles_charge.html" class="charge-btn">
+                                마일리지 충전
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-wrap col-group">
+                    <a href="javascript:window.history.back();" class="prev scd5">
+                        뒤로가기
+                    </a>
+                    <a href="confirm_apply_done.html" class="next scd5">
+                        서비스 신청
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+           $("select#service_option").change(function(){
+                var value1 = $(this).val();
+                var value2 = $("select#service_option> option:selected").attr("value2");
+
+                $('.left-box p').show();
+                $("#option_num").html(value1);
+                $("#option_txt").html(value2);
+            });
+        </script>
+    </div>
+</body>
+
+</html>

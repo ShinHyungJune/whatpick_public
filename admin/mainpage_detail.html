@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage manage_detail mainpage_detail">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <a href="javascript:window.history.back();" class="back-btn">
+                        <i class="xi-arrow-left"></i>
+                    </a>
+                    <p class="title scd5">
+                        메인페이지
+                    </p>
+                </div>
+                <div class="form-wrap">
+                    <form action="">
+                        <ul class="form-box">
+                            <li class="col-group file img">
+                                <div class="default row-group">
+                                    <p>PC 이미지</p>
+                                    <label for="mainpage_pc">파일 첨부</label>
+                                    <input type="file" id="mainpage_pc" onchange="file_change('mainpage_pc');" accept="image/*">
+                                </div>
+                                <div class="user">
+                                    <div class="img-box pc" id="thumbnail_pc"></div>
+                                </div>
+                            </li>
+                            <li class="col-group file img">
+                                <div class="default row-group">
+                                    <p>모바일 이미지</p>
+                                    <label for="mainpage_mb">파일 첨부</label>
+                                    <input type="file" id="mainpage_mb" onchange="file_change('mainpage_mb');" accept="image/*">
+                                </div>
+                                <div class="user">
+                                    <div class="img-box mb" id="thumbnail_mb"></div>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>분류</p>
+                                </div>
+                                <div class="user">
+                                    <select name="" id=""></select>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>제목</p>
+                                </div>
+                                <div class="user">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>부제목</p>
+                                </div>
+                                <div class="user">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                    <button type="submit" class="submit-btn">등록하기</button>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            
+            //이미지 업로드 미리보기
+            function readInputFile($input) {
+                if ($input.files && $input.files[0]) {
+                    var reader = new FileReader(this);
+                    reader.onload = function (e) {
+                        $($input).parent('.default').siblings('.user').children('.img-box').html(
+                            "<img src=" + e.target.result + ">"
+                            );
+                    }
+                    reader.readAsDataURL($input.files[0]);
+                }
+            }
+     
+            $("input").on('change', function () {
+                var inputId = $(this).attr('id');
+                var $input = $("input#"+inputId)
+                readInputFile(this);
+                $("."+inputId+"-img").addClass("upload");
+                $("."+inputId+"-del").show();
+            });
+            
+            // 등록 이미지 삭제 ( input file reset )
+            function resetInputFile($input, $preview) {
+                var agent = navigator.userAgent.toLowerCase();
+                if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
+                    // ie 일때
+                    $input.replaceWith($input.clone(true));
+                    $preview.empty();
+                } else {
+                    //other
+                    $input.val("");
+                    $preview.empty();
+                }       
+            }
+            
+            
+            $(".del").click(function(event) {
+                var dalData = $(this).attr('data-del');
+                var $input = $("input#"+dalData);
+                var $preview = $('.'+dalData+'-img .img-box');
+                resetInputFile($input, $preview);
+                $("."+dalData+"-img").removeClass("upload");
+                $("."+dalData+"-del").hide();
+            });
+        
+        </script>
+    </div>
+</body>
+</html>

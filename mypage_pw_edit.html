@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- main -->
+        <div class="popup mypage_pw_edit">
+            <button type="button" class="close">
+                <i class="xi-close"></i>
+            </button>
+            <form action="">
+                <h2 class="title">
+                    비밀번호 변경
+                </h2>
+
+                <ul class="form-wrap">
+                    <li>
+                        <p class="title">
+                            이전 비밀번호
+                        </p>
+                        <div class="user">
+                            <input type="password" placeholder="현재 사용중인 비밀번호를 적어주세요.">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">
+                            새로운 비밀번호
+                        </p>
+                        <div class="user">
+                            <input type="password" placeholder="변경하실 비밀번호를 적어주세요.">
+                            <span class="notice wrong">
+                                사용불가 <i class="xi-security"></i>
+                            </span>
+                            <span class="notice correct">
+                                사용가능 <i class="xi-shield-checked"></i>
+                            </span>
+                        </div>
+                        <div class="user">
+                            <input type="password" placeholder="변경하실 비밀번호를 적어주세요.">
+                        </div>
+                        <p class="guide">
+                            영문 대문자와 소문자, 숫자, 특수문자 중 2가지 이상을 조합하여 6~20자로 입력해주세요
+                        </p>
+                        <p class="guide wrong">
+                            비밀번호가 일치하지 않습니다
+                        </p>
+                    </li>
+                </ul>
+
+                <button type="submit" class="submit-btn scd5">변경하기</button>
+            </form>
+        </div>
+        <!-- //main -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </div>
+</body>
+
+</html>

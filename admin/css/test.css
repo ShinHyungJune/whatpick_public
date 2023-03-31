@@ -1,0 +1,17 @@
+#wrap { width: 800px; margin: 0 auto; }
+h2 { width: 100%; justify-content: flex-end; font-size: 40px; }
+.default_txt { color: #d7a550; }
+.toggle_txt { display: block; overflow: hidden; white-space: nowrap;  }
+.toggle_txt1 { width: 442px; animation-name: toggletxt1; animation-duration: 12s; animation-direction: alternate; animation-iteration-count: infinite }
+.toggle_txt2 { width: 116px; animation-name: toggletxt2; animation-duration: 12s; animation-direction: alternate; animation-iteration-count: infinite}
+
+@-webkit-keyframes toggletxt1 {
+    0%, 20%, 80%, 100% { opacity: 1; width: 442px;}
+    25%, 75% { opacity: 0; width: 442px;}
+    30%, 70% { opacity: 0; width: 0; }
+}
+@-webkit-keyframes toggletxt2 {
+    0%, 20%, 80%, 100% { opacity: 1; width: 116px;}
+    25%, 75% { opacity: 0; width: 116px;}
+    30%, 70% { opacity: 0; width: 0; }
+}

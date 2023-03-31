@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="mainpage">
+            <div class="main-banner swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide banner-wrap">
+                        <img src="images/main_banner.png" alt="">
+                        <div class="container">
+                            <div class="txt-box">
+                                <span class="label scd5" data-swiper-parallax="-2000">
+                                    차량비교
+                                </span>
+                                <pre class="title scd5" data-swiper-parallax="-1600">
+                                    당신의 예비 자차를 
+                                    찾아드려요
+                                </pre>
+                                <pre class="sub-title" data-swiper-parallax="-1200">
+                                    태어는 났나 싶은 당신의 예비 자차, 
+                                    만남부터 계약까지
+                                </pre>
+                            </div>
+                            <a href="compare.html" class="more-btn" data-swiper-parallax="-800">더보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-wrap">
+                        <img src="images/TEST1.png" alt="">
+                        <div class="container">
+                            <div class="txt-box">
+                                <span class="label scd5" data-swiper-parallax="-2000">
+                                    차량비교
+                                </span>
+                                <pre class="title scd5" data-swiper-parallax="-1600">
+                                    당신의 예비 자차를 
+                                    찾아드려요
+                                </pre>
+                                <pre class="sub-title" data-swiper-parallax="-1200">
+                                    태어는 났나 싶은 당신의 예비 자차, 
+                                    만남부터 계약까지
+                                </pre>
+                            </div>
+                            <a href="compare.html" class="more-btn" data-swiper-parallax="-800">더보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-wrap">
+                        <img src="images/TEST2.png" alt="">
+                        <div class="container">
+                            <div class="txt-box">
+                                <span class="label scd5" data-swiper-parallax="-2000">
+                                    차량비교
+                                </span>
+                                <pre class="title scd5" data-swiper-parallax="-1600">
+                                    당신의 예비 자차를 
+                                    찾아드려요
+                                </pre>
+                                <pre class="sub-title" data-swiper-parallax="-1200">
+                                    태어는 났나 싶은 당신의 예비 자차, 
+                                    만남부터 계약까지
+                                </pre>
+                            </div>
+                            <a href="compare.html" class="more-btn" data-swiper-parallax="-800">더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="main-section sec-1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                <div class="container">
+                    <div class="sec-title">
+                        <h2 class="scd5">
+                            <span class="red scd5">왓픽</span>으로 <br>
+                            가장 믿을 만한 매물 찾기
+                        </h2>
+                        <p class="sub-title">
+                            차량정보, 업체, 가격은 한번에 비교하고 <br>
+                            허위매물은 걸러주는 왓픽으로 검색해보세요.
+                        </p>
+                    </div>
+                    <div class="sec-con">
+                        <form action="">
+                            <div class="search-wrap search-wrap1">
+                                <input type="text" placeholder="모델명을 입력해주세요.">
+                                <a href="" class="search-btn">
+                                    <i class="xi-search"></i>
+                                </a>
+                            </div>
+                        </form>
+                        <form action="">
+                            <div class="search-wrap search-wrap2">
+                                <div class="search-top col-group">
+                                    <p class="scd5">모델을 찾아보세요</p>
+                                    <a href="" class="search-btn">
+                                        <i class="xi-search"></i>
+                                    </a>
+                                </div>
+                                <div class="search-box">
+                                    <ul class="search-list col-group">
+                                        <li data-tab="select_1">
+                                            <div class="select-point">
+                                                <span class="scd5">제조사</span>
+                                                <p class="select-defailt">제조사 선택</p>
+                                            </div>
+                                        </li>
+                                        <li data-tab="select_2">
+                                            <div class="select-point">
+                                                <span class="scd5">모델</span>
+                                                <p class="select-defailt">모델 선택</p>
+                                            </div>
+                                        </li>
+                                        <li data-tab="select_3">
+                                            <div class="select-point">
+                                                <span class="scd5">세부모델</span>
+                                                <p class="select-defailt">세부모델 선택</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="select-box tab-content" id="select_1">
+                                        <p class="scd5">국내</p>
+                                        <ul class="select-list col-group">
+                                            <li>현대</li>
+                                            <li>제네시스</li>
+                                            <li>기아</li>
+                                            <li>한국GM</li>
+                                            <li>르노코리아</li>
+                                            <li>쌍용</li>
+                                            <li>기타</li>
+                                        </ul>
+                                        <p class="scd5">수입</p>
+                                        <ul class="select-list col-group">
+                                            <li>벤츠</li>
+                                            <li>BMW</li>
+                                            <li>아우디</li>
+                                            <li>폭스바겐</li>
+                                            <li>렉서스</li>
+                                            <li>낫산</li>
+                                            <li>다이하쓰</li>
+                                            <li>닷지</li>
+                                            <li>도요타</li>
+                                            <li>동풍자동차</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section sec-2"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                <div class="container">
+                    <div class="sec-title">
+                        <h2 class="scd5">
+                            왓픽에 문의하세요
+                        </h2>
+                        <p class="sub-title">
+                            중고차 매물의 <strong>진짜 정보</strong>를 제공합니다.
+                        </p>
+                    </div>
+                    <div class="sec-wrap col-group">
+                        <div class="sec-con">
+                            <div class="txt-box">
+                                <p class="label">
+                                    # 이차 어때
+                                </p>
+                                <p class="title scd5">
+                                    허위매물 피할수는 없을까?
+                                </p>
+                                <p class="txt">
+                                    허위매물로 낭비된 시간과 돈을 날린 경험! <br>
+                                    왓픽이 진실을 찾아드립니다.
+                                </p>
+                                <a href="confirm.html" class="more-btn">자세히 보기</a>
+                            </div>
+                            <ul class="step-list col-group">
+                                <li>
+                                    <img src="images/main_sec2_icon1.png" alt="">
+                                    <p>
+                                        마일리지 결제
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/main_sec2_icon2.png" alt="">
+                                    <p>
+                                        매물 링크 업로드
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/main_sec2_icon3.png" alt="">
+                                    <p>
+                                        매물 확인
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sec-con">
+                            <div class="txt-box">
+                                <p class="label">
+                                    # 동행서비스 <span class="red"># 준비중</span>
+                                </p>
+                                <p class="title scd5">
+                                    자동차를 몰라 자문이 필요한데..
+                                </p>
+                                <p class="txt">
+                                    차를 잘 몰라서 속고, 말을 너무 잘해서 속고, <br>
+                                    분위기에 속고, 속고 숨기는 내 차 찾아드립니다.
+                                </p>
+                                <a href="service.html" class="more-btn">자세히 보기</a>
+                            </div>
+                            <ul class="step-list col-group">
+                                <li>
+                                    <img src="images/main_sec2_icon4.png" alt="">
+                                    <p>
+                                        마일리지 결제
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/main_sec2_icon5.png" alt="">
+                                    <p>
+                                        1차 상담
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/main_sec2_icon6.png" alt="">
+                                    <p>
+                                        담당자 배정
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="images/main_sec2_icon7.png" alt="">
+                                    <p>
+                                        동행서비스
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section sec-3 container">
+                <div class="mile-banner">
+                    <div class="txt-box">
+                        <p class="txt">
+                            왓픽의 일부 서비스는 마일리지로 이용이 가능합니다.
+                        </p>
+                        <p class="title scd6">
+                            <span class="red scd6">마일리지 충전</span>하고<br class="mb"> 다양한 서비스를 만나보세요!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section sec-4"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                <div class="container col-group">
+                    <div class="sec-title">
+                        <h2 class="scd5">
+                            궁금한 점을 확인하세요
+                        </h2>
+                        <p class="sub-title">
+                            자주묻는질문, 1:1문의로 궁금하신 점에 대한 <br>
+                            답변을 성심 성의껏 드립니다.
+                        </p>
+                        <div class="btn-wrap col-group">
+                            <a href="inquiry2.html" class="scd5">1:1문의</a>
+                            <a href="inquiry1.html" class="scd5">자주묻는질문</a>
+                        </div>
+                    </div>
+                    <div class="sec-con">
+                        <ul class="faq-list">
+                            <li>
+                                <div class="qs col-group">
+                                    <span class="icon">
+                                        Q
+                                    </span>
+                                    <p>
+                                        신용카드 결제가 가능한가요?
+                                    </p>
+                                    <span class="open">
+                                        <i class="xi-plus"></i>
+                                    </span>
+                                </div>
+                                <div class="ans">
+                                    <pre>- 신분증, 보험가입증명서(팩스 사본 가능)
+- 할부 구매 시, 인감증명서 및 인감도장 1통 추가 필요
+- 구매자가 본인이 아닌 경우, 위임장 추가 필요</pre>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="qs col-group">
+                                    <span class="icon">
+                                        Q
+                                    </span>
+                                    <p>
+                                        신용카드 결제가 가능한가요?
+                                    </p>
+                                    <span class="open">
+                                        <i class="xi-plus"></i>
+                                    </span>
+                                </div>
+                                <div class="ans">
+                                    <pre>- 신분증, 보험가입증명서(팩스 사본 가능)
+- 할부 구매 시, 인감증명서 및 인감도장 1통 추가 필요
+- 구매자가 본인이 아닌 경우, 위임장 추가 필요</pre>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="qs col-group">
+                                    <span class="icon">
+                                        Q
+                                    </span>
+                                    <p>
+                                        신용카드 결제가 가능한가요?
+                                    </p>
+                                    <span class="open">
+                                        <i class="xi-plus"></i>
+                                    </span>
+                                </div>
+                                <div class="ans">
+                                    <pre>- 신분증, 보험가입증명서(팩스 사본 가능)
+- 할부 구매 시, 인감증명서 및 인감도장 1통 추가 필요
+- 구매자가 본인이 아닌 경우, 위임장 추가 필요</pre>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="qs col-group">
+                                    <span class="icon">
+                                        Q
+                                    </span>
+                                    <p>
+                                        신용카드 결제가 가능한가요?
+                                    </p>
+                                    <span class="open">
+                                        <i class="xi-plus"></i>
+                                    </span>
+                                </div>
+                                <div class="ans">
+                                    <pre>- 신분증, 보험가입증명서(팩스 사본 가능)
+- 할부 구매 시, 인감증명서 및 인감도장 1통 추가 필요
+- 구매자가 본인이 아닌 경우, 위임장 추가 필요</pre>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="qs col-group">
+                                    <span class="icon">
+                                        Q
+                                    </span>
+                                    <p>
+                                        신용카드 결제가 가능한가요?
+                                    </p>
+                                    <span class="open">
+                                        <i class="xi-plus"></i>
+                                    </span>
+                                </div>
+                                <div class="ans">
+                                    <pre>- 신분증, 보험가입증명서(팩스 사본 가능)
+- 할부 구매 시, 인감증명서 및 인감도장 1통 추가 필요
+- 구매자가 본인이 아닌 경우, 위임장 추가 필요</pre>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            //메인 배너 슬라이드
+            var Mainswiper = new Swiper('.main-banner', {
+                // effect : 'fade',
+                autoplay: {
+                    delay: 2000,
+                },
+                speed: 1200,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                parallax: true,
+            });
+
+            //탭
+            $('.search-list li').click(function(){
+                $(".search-list li").removeClass("active");
+                $(this).addClass("active");
+                var tab_id = $(this).attr('data-tab');
+                $('.search-box .tab-content').stop().slideUp();
+
+                $(".search-box .tab-content#"+tab_id+"").stop().slideToggle();
+
+                $(".select-list li").click(function(){
+                    $(".select-list li").removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+
+            //자주묻는질문
+            $('.qs').click(function(){
+                $('.qs').removeClass('close')
+                $(this).addClass('close')
+                $('.ans').stop().slideUp();
+                $(this).next('.ans').stop().slideToggle();
+            });
+        </script>
+    </div>
+</body>
+
+</html>

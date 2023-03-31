@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage member1">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <p class="title scd5">
+                        회원관리
+                    </p>
+                    <div class="search-wrap">
+                        <form action="">
+                            <input type="text" placeholder="검색어를 입력해주세요">
+                            <a href="" class="search-btn">
+                                <i class="xi-search"></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <ul class="thead col-group">
+                        <li class="th">번호</li>
+                        <li class="th">가입일</li>
+                        <li class="th">아이디</li>
+                        <li class="th">이름</li>
+                        <li class="th">이메일</li>
+                        <li class="th">전화번호</li>
+                        <li class="th">가입</li>
+                        <li class="th">회원 분류</li>
+                    </ul>
+                    <ul class="tbody">
+                        <li>
+                            <a href="member1_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        3
+                                    </li>
+                                    <li class="td">
+                                        2022.00.00
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234
+                                    </li>
+                                    <li class="td">
+                                        김왓픽
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234@gmail.com
+                                    </li>
+                                    <li class="td">
+                                        010-0000-0000
+                                    </li>
+                                    <li class="td">
+                                        일반
+                                    </li>
+                                    <li class="td">
+                                        탈퇴 2022.00.00
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="member1_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        2
+                                    </li>
+                                    <li class="td">
+                                        2022.00.00
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234
+                                    </li>
+                                    <li class="td">
+                                        김왓픽
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234@gmail.com
+                                    </li>
+                                    <li class="td">
+                                        010-0000-0000
+                                    </li>
+                                    <li class="td">
+                                        네이버
+                                    </li>
+                                    <li class="td">
+                                        회원
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="member1_detail.html">
+                                <ul class="tr col-group">
+                                    <li class="td">
+                                        1
+                                    </li>
+                                    <li class="td">
+                                        2022.00.00
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234
+                                    </li>
+                                    <li class="td">
+                                        김왓픽
+                                    </li>
+                                    <li class="td">
+                                        ASDE1234@gmail.com
+                                    </li>
+                                    <li class="td">
+                                        010-0000-0000
+                                    </li>
+                                    <li class="td">
+                                        카카오
+                                    </li>
+                                    <li class="td">
+                                        회원
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="pagination col-group">
+                    <li class="nav-btn prev"><a href=""><i class="xi-long-arrow-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#" class="">2</a></li>
+                    <li><a href="#" class="">3</a></li>
+                    <li><a href="#" class="">4</a></li>
+                    <li><a href="#" class="">5</a></li>
+                    <li><a href="#" class="">6</a></li>
+                    <li><a href="#" class="">7</a></li>
+                    <li><a href="#" class="">8</a></li>
+                    <li><a href="#" class="">9</a></li>
+                    <li><a href="#" class="">10</a></li>
+                    <li class="nav-btn next"><a href=""><i class="xi-long-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script>
+            // 전체체크
+            $(function () {
+                $("#cbx_chkAll").click(function() {
+                    if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+                    else $("input[name=chk]").prop("checked", false);
+                });
+                $("input[name=chk]").click(function() {
+                    var total = $("input[name=chk]").length;
+                    var checked = $("input[name=chk]:checked").length;
+                    
+                    if(total != checked) $("#cbx_chkAll").prop("checked", false);
+                    else $("#cbx_chkAll").prop("checked", true); 
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

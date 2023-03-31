@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick 관리자페이지</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div id="wrap" class="col-group">
+        <nav id="gnb" class="gnb"></nav>
+        <main class="manage manage_detail inquiry1_detail">
+            <div class="manage-wrap">
+                <div class="title-wrap col-group">
+                    <a href="javascript:window.history.back();" class="back-btn">
+                        <i class="xi-arrow-left"></i>
+                    </a>
+                    <p class="title scd5">
+                        자주묻는질문
+                    </p>
+                </div>
+                <div class="form-wrap">
+                    <form action="">
+                        <ul class="form-box">
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>관리자 명</p>
+                                </div>
+                                <div class="user">
+                                     <input type="text">
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>자주묻는질문</p>
+                                </div>
+                                <div class="user">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li class="col-group">
+                                <div class="default">
+                                    <p>답변</p>
+                                </div>
+                                <div class="user">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                    <button type="submit" class="submit-btn">등록하기</button>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+        <script src="./js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.min.js"></script>
+    </div>
+</body>
+</html>

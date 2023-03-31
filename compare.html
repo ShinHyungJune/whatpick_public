@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="subpage compare form">
+
+            <div class="page-nav container">
+                <ul class="col-group">
+                    <li>WHATPICK</li>
+                    <li><i class="xi-angle-right"></i></li>
+                    <li><span class="red">차량비교</span></li>
+                </ul>
+            </div>
+
+            <div class="container col-group">
+                <div class="left-wrap">
+                    <div class="compare_toggle mb">
+                        <i class="xi-angle-right"></i>
+                    </div>
+                    <div class="title col-group">
+                        <p class="scd5">FILTER</p>
+                        <button type="button">
+                            <i class="xi-refresh"></i>
+                        </button>
+                    </div>
+                    <ul class="filter-wrap">
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    차종
+                                    <span class="txt">중복선택가능</p>
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <ul class="filter-detail">
+                                    <li>
+                                        <label for="filter_1_1">
+                                            <input type="checkbox" id="filter_1_1">
+                                            <div class="filter-data col-group">
+                                                <span class="name">경차</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_2">
+                                            <input type="checkbox" id="filter_1_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">소형</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_3">
+                                            <input type="checkbox" id="filter_1_3">
+                                            <div class="filter-data col-group">
+                                                <span class="name">준중형</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_4">
+                                            <input type="checkbox" id="filter_1_4">
+                                            <div class="filter-data col-group">
+                                                <span class="name">중형</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_5">
+                                            <input type="checkbox" id="filter_1_5">
+                                            <div class="filter-data col-group">
+                                                <span class="name">대형</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_6">
+                                            <input type="checkbox" id="filter_1_6">
+                                            <div class="filter-data col-group">
+                                                <span class="name">스포츠카</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_7">
+                                            <input type="checkbox" id="filter_1_7">
+                                            <div class="filter-data col-group">
+                                                <span class="name">RV</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_8">
+                                            <input type="checkbox" id="filter_1_8">
+                                            <div class="filter-data col-group">
+                                                <span class="name">SUV</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_9">
+                                            <input type="checkbox" id="filter_1_9">
+                                            <div class="filter-data col-group">
+                                                <span class="name">승합</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_10">
+                                            <input type="checkbox" id="filter_1_10">
+                                            <div class="filter-data col-group">
+                                                <span class="name">버스</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_1_11">
+                                            <input type="checkbox" id="filter_1_11">
+                                            <div class="filter-data col-group">
+                                                <span class="name">화물</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    제조사/모델
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <p class="sub-title">국산</p>
+                                <ul class="filter-detail overflow">
+                                    <li>
+                                        <label for="filter_2_1">
+                                            <input type="radio" id="filter_2_1" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">현대</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_2">
+                                            <input type="radio" id="filter_2_2" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">제네시스</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_3">
+                                            <input type="radio" id="filter_2_3" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">기아</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_4">
+                                            <input type="radio" id="filter_2_4" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">쉐보레(GM대우)</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_5">
+                                            <input type="radio" id="filter_2_5" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">르노코리아(삼성)</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_6">
+                                            <input type="radio" id="filter_2_6" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">쌍용</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_7">
+                                            <input type="radio" id="filter_2_7" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">기타</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <p class="sub-title">수입</p>
+                                <ul class="filter-detail overflow">
+                                    <li>
+                                        <label for="filter_2_8">
+                                            <input type="radio" id="filter_2_8" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">벤츠</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_9">
+                                            <input type="radio" id="filter_2_9" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">BMW</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_10">
+                                            <input type="radio" id="filter_2_10" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">아우디</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_11">
+                                            <input type="radio" id="filter_2_11" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">폭스바겐</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_12">
+                                            <input type="radio" id="filter_2_12" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">미니</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_2_13">
+                                            <input type="radio" id="filter_2_13" name="filter_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">랜드로버</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    연식
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <div class="filter-detail col-group">
+                                    <select name="filter_3" id="filter_3_1"></select>
+                                    <select name="filter_3" id="filter_3_2"></select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    주행거리
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <div class="filter-detail col-group">
+                                    <select name="filter_4" id="filter_4_1"></select>
+                                    <select name="filter_4" id="filter_4_2"></select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    가격
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <div class="filter-detail col-group">
+                                    <select name="filter_5" id="filter_5_1"></select>
+                                    <select name="filter_5" id="filter_5_2"></select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    변속기
+                                    <span class="txt">중복선택가능</p>
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <ul class="filter-detail">
+                                    <li>
+                                        <label for="filter_6_1">
+                                            <input type="checkbox" id="filter_6_1">
+                                            <div class="filter-data col-group">
+                                                <span class="name">오토</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_6_2">
+                                            <input type="checkbox" id="filter_6_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">수동</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_6_3">
+                                            <input type="checkbox" id="filter_6_3">
+                                            <div class="filter-data col-group">
+                                                <span class="name">세미오토</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_6_4">
+                                            <input type="checkbox" id="filter_6_4">
+                                            <div class="filter-data col-group">
+                                                <span class="name">CVT</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_6_5">
+                                            <input type="checkbox" id="filter_6_5">
+                                            <div class="filter-data col-group">
+                                                <span class="name">기타</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    색상
+                                    <span class="txt">중복선택가능</p>
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <ul class="filter-detail color">
+                                    <li>
+                                        <label for="filter_7_1">
+                                            <input type="checkbox" id="filter_7_1">
+                                            <div class="filter-data col-group">
+                                                <span class="name">흰색</span>
+                                                <span class="color-box white"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_2">
+                                            <input type="checkbox" id="filter_7_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">검정</span>
+                                                <span class="color-box black"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_3">
+                                            <input type="checkbox" id="filter_7_3">
+                                            <div class="filter-data col-group">
+                                                <span class="name">은색</span>
+                                                <span class="color-box silver"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_4">
+                                            <input type="checkbox" id="filter_7_4">
+                                            <div class="filter-data col-group">
+                                                <span class="name">진주</span>
+                                                <span class="color-box pearl"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_5">
+                                            <input type="checkbox" id="filter_7_5">
+                                            <div class="filter-data col-group">
+                                                <span class="name">회색</span>
+                                                <span class="color-box gray"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_6">
+                                            <input type="checkbox" id="filter_7_6">
+                                            <div class="filter-data col-group">
+                                                <span class="name">빨강</span>
+                                                <span class="color-box red"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_7">
+                                            <input type="checkbox" id="filter_7_7">
+                                            <div class="filter-data col-group">
+                                                <span class="name">파랑</span>
+                                                <span class="color-box blue"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_8">
+                                            <input type="checkbox" id="filter_7_8">
+                                            <div class="filter-data col-group">
+                                                <span class="name">주황</span>
+                                                <span class="color-box orange"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_9">
+                                            <input type="checkbox" id="filter_7_9">
+                                            <div class="filter-data col-group">
+                                                <span class="name">갈색</span>
+                                                <span class="color-box brown"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_10">
+                                            <input type="checkbox" id="filter_7_10">
+                                            <div class="filter-data col-group">
+                                                <span class="name">초록</span>
+                                                <span class="color-box green"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_11">
+                                            <input type="checkbox" id="filter_7_11">
+                                            <div class="filter-data col-group">
+                                                <span class="name">노랑</span>
+                                                <span class="color-box yellow"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_12">
+                                            <input type="checkbox" id="filter_7_12">
+                                            <div class="filter-data col-group">
+                                                <span class="name">보라</span>
+                                                <span class="color-box purple"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_7_13">
+                                            <input type="checkbox" id="filter_7_13">
+                                            <div class="filter-data col-group">
+                                                <span class="name">기타</span>
+                                                <span class="color-box other"></span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title-wrap col-group">
+                                <p class="title col-group">
+                                    연료
+                                    <span class="txt">중복선택가능</p>
+                                </p>
+                                <button type="button" class="more">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="filter-detail-wrap">
+                                <ul class="filter-detail">
+                                    <li>
+                                        <label for="filter_8_1">
+                                            <input type="checkbox" id="filter_8_1">
+                                            <div class="filter-data col-group">
+                                                <span class="name">가솔린</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_2">
+                                            <input type="checkbox" id="filter_8_2">
+                                            <div class="filter-data col-group">
+                                                <span class="name">디젤</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_3">
+                                            <input type="checkbox" id="filter_8_3">
+                                            <div class="filter-data col-group">
+                                                <span class="name">LPG</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_4">
+                                            <input type="checkbox" id="filter_8_4">
+                                            <div class="filter-data col-group">
+                                                <span class="name">가솔린+LPG</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_5">
+                                            <input type="checkbox" id="filter_8_5">
+                                            <div class="filter-data col-group">
+                                                <span class="name">하이브리드(LPG)</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_6">
+                                            <input type="checkbox" id="filter_8_6">
+                                            <div class="filter-data col-group">
+                                                <span class="name">하이브리드(가솔린)</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_7">
+                                            <input type="checkbox" id="filter_8_7">
+                                            <div class="filter-data col-group">
+                                                <span class="name">하이브리드(디젤)</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_8">
+                                            <input type="checkbox" id="filter_8_8">
+                                            <div class="filter-data col-group">
+                                                <span class="name">전기</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_9">
+                                            <input type="checkbox" id="filter_8_9">
+                                            <div class="filter-data col-group">
+                                                <span class="name">CNG</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="filter_8_10">
+                                            <input type="checkbox" id="filter_8_10">
+                                            <div class="filter-data col-group">
+                                                <span class="name">기타</span>
+                                                <span class="num">1,486</span>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-wrap">
+                    <div class="search-wrap">
+                        <form action="">
+                            <div class="search-box">
+                                <input type="text" placeholder="모델명을 입력해주세요">
+                                <a href="" class="search-btn">
+                                    <i class="xi-search"></i>
+                                </a>
+                            </div>
+                        </form>
+                        <div class="filter-result-wrap">
+                            <ul class="filter-result col-group">
+                                <li>
+                                    중형
+                                    <button type="button" class="del">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    준중형
+                                    <button type="button" class="del">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    소형
+                                    <button type="button" class="del">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    경차
+                                    <button type="button" class="del">
+                                        <i class="xi-close"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="tab-link col-group">
+                        <li class="active">
+                            <a href="">가격순</a>
+                        </li>
+                        <li>
+                            <a href="">주행거리</a>
+                        </li>
+                        <li>
+                            <a href="">연식</a>
+                        </li>
+                        <li>
+                            <a href="">등록일</a>
+                        </li>
+                    </ul>
+                    <ul class="prod-list col-group">
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="compare_detail.html" class="prod-box">
+                                <div class="img-box">
+                                    <img src="images/noimage.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="title">
+                                        [k카] 기아 K7 프리미어 가솔린 3.0 시그니처
+                                    </p>
+                                    <p class="price scd6">
+                                        3,190만원
+                                    </p>
+                                    <p class="txt">
+                                        <span>
+                                            2021년 12월 (21년식)
+                                        </span>
+                                        <span>
+                                            23,226km
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="btn-wrap col-group">
+                                <a href="" class="like-btn">
+                                    <i class="xi-heart"></i>
+                                </a>
+                                <a href="confirm_apply.html" class="confirm-btn">
+                                    이차어때 신청
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pagination col-group">
+                        <li class="nav-btn prev"><a href=""><i class="xi-long-arrow-left"></i></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#" class="">2</a></li>
+                        <li><a href="#" class="">3</a></li>
+                        <li><a href="#" class="">4</a></li>
+                        <li><a href="#" class="">5</a></li>
+                        <li><a href="#" class="">6</a></li>
+                        <li><a href="#" class="">7</a></li>
+                        <li><a href="#" class="">8</a></li>
+                        <li><a href="#" class="">9</a></li>
+                        <li><a href="#" class="">10</a></li>
+                        <li class="nav-btn next"><a href=""><i class="xi-long-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            //필터
+            $('.title-wrap').click(function(){
+                $(this).children('.more').toggleClass('open')
+                $(this).next(".filter-detail-wrap").stop().slideToggle();
+            });
+
+            $('.compare_toggle').click(function(){
+               $('.left-wrap').toggleClass('open');
+               if( $('.left-wrap').hasClass('open') ) {
+                    $(this).addClass('open');
+                    $('html').css('overflow', 'hidden')
+               } else {
+                    $(this).removeClass('open');
+                    $('html').css('overflow', 'unset')
+               }
+            });
+        </script>
+    </div>
+</body>
+
+</html>

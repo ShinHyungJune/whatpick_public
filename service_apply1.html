@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="subpage confirm confirm_apply service_apply form">
+
+            <div class="page-nav container">
+                <ul class="col-group">
+                    <li>WHATPICK</li>
+                    <li><i class="xi-angle-right"></i></li>
+                    <li>동행서비스</li>
+                    <li><i class="xi-angle-right"></i></li>
+                    <li><span class="red">서비스 신청</span></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <form action="">
+                    <div class="notice-box col-group">
+                        <p class="title scd6">동행서비스</p>
+                        <p class="txt">
+                            <span class="scd5">알아보고 있는 차량이 있는 경우(URL이 있는경우)</span> 외 
+                            <span class="scd5">봐둔 매물이 없이 전문가와 매물을 같이 찾을 경우</span>에도 동행서비스를 신청 가능합니다. <br>
+                            아래내용을 작성해주시면 상담 도와드리겠습니다.
+                        </p>
+                    </div>
+                    <ul class="form-box row-group">
+                        <li class="col-group url">
+                            <div class="default">구입 예정일</div>
+                            <div class="user">
+                                <input type="text" placeholder="희망 구매 예정일을 작성해주세요.">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">지역</div>
+                            <div class="user">
+                                <input type="text" placeholder="희망 구매 지역을 작성해주세요.">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">국산/수입</div>
+                            <div class="user col-group">
+                                <label for="service_check1_1">
+                                    <input type="radio" id="service_check1_1" name="service_check1">
+                                    <span class="radio-icon"></span>
+                                    국산차
+                                </label>
+                                <label for="service_check1_2">
+                                    <input type="radio" id="service_check1_2" name="service_check1">
+                                    <span class="radio-icon"></span>
+                                    수입차
+                                </label>
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">희망 모델
+                                <span>여러모델가능</span>
+                            </div>
+                            <div class="user">
+                                <input type="text" placeholder="희망 모델이 없으시다면 비워주세요.">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">희망 연료</div>
+                            <div class="user">
+                                <input type="text" placeholder="ex) 가솔린, 디젤, LPG, 하이브리드, 전기 등">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">희망 색상
+                                <span>여러색상가능</span>
+                            </div>
+                            <div class="user">
+                                <input type="text" placeholder="희망 색상이 있으시면 작성해주세요.">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">꼭 필요한 옵션</div>
+                            <div class="user">
+                                <input type="text" placeholder="ex) 열선시트, 통풍시트, 열선핸들, 시동버튼, 선루프 등">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">주행거리</div>
+                            <div class="user">
+                                <input type="text" placeholder="희망 주행거리가 몇 km이하 인가요?">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">구매가능한 사고 수준</div>
+                            <div class="user">
+                                <input type="text" placeholder="ex) 완전무사고, 단순교환 등">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">희망예산</div>
+                            <div class="user">
+                                <input type="text" placeholder="희망예산을 작성해주세요.">
+                            </div>
+                        </li>
+                        <li class="col-group">
+                            <div class="default">문의하고 싶은 차량</div>
+                            <div class="user row-group">
+                                <div class="col-group">
+                                    <label for="service_check2_1">
+                                        <input type="radio" id="service_check2_1" name="service_check2">
+                                        <span class="radio-icon"></span>
+                                        알아 본 차량이 있어요 (중고차량 URL을 알고있어요)
+                                    </label>
+                                    <label for="service_check2_2">
+                                        <input type="radio" id="service_check2_2" name="service_check2">
+                                        <span class="radio-icon"></span>
+                                        알아 본 차량이 없어요.
+                                    </label>
+                                </div>
+                                <ul class="input-list">
+                                    <li class="col-group">
+                                        <span class="num">1</span>
+                                        <input type="text" placeholder="URL을 작성해주세요.">
+                                    </li>
+                                    <li class="col-group add">
+                                        <span class="num">
+                                            +
+                                        </span>
+                                        <p><i class="xi-angle-left"></i> 알아본 차량이 더 있으시면 추가해주세요.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="notice-box col-group">
+                        <p class="title scd6">순서</p>
+                        <p class="txt">
+                            01. 신청과 함께 결제 진행 <br>
+                            02. 서비스 신청 시 1차 전화 상담 <br>
+                            03. 전문가 배정 <br>
+                            04. 전문가와 함께 온라인으로 매물 체크 <br>
+                            05. 최종결정하신 매물을 전문가와 함께 현장 검수
+                        </p>
+                    </div>
+                </form>
+                <div class="btn-wrap col-group">
+                    <a href="javascript:window.history.back();" class="prev scd5">
+                        뒤로가기
+                    </a>
+                    <a href="service_apply2.html" class="next scd5">
+                        서비스 신청
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </div>
+</body>
+
+</html>

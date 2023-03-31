@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatpick</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- 애니메이션 플러그인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!-- main -->
+        <main class="find_account mypage_leave done">
+            <div class="title-wrap">
+                <span class="icon">
+                    <i class="xi-warning"></i>
+                </span>
+                <h2 class="title scd5">
+                    <span class="red scd5">왓픽</span> 회원 탈퇴
+                </h2>
+                <ul class="txt">
+                    <li>회원탈퇴시 정보 수집기간 : 3년</li>
+                    <li>안내사항 : 탈퇴 후 회원정보 및 이용기록은 모두 삭제되며 다시 복구하실 수 없습니다.</li>
+                    <li>고객님께서 탈퇴하실 경우 충전하신 모든 마일리지가 소멸됩니다.</li>
+                </ul>
+            </div>
+            <div class="find-method container row-group">
+                <form action="">
+                    <div class="method-box form">
+                        <input type="password" placeholder="비밀번호를 입력해주세요" class="wrong"> <!-- 일치하는 정보가 없을 때 wrong 클래스 추가 -->
+                        <p class="guide wrong">비밀번호가 일치하지 않습니다.</p><!-- 일치하는 정보가 없을 때 보이기 -->
+                        <label for="leave_agree">
+                            <input type="checkbox" id="leave_agree">
+                            <span class="check-icon"></span>
+                            위 내용을 동의하고 탈퇴합니다.
+                        </label>
+                    </div>
+                </form>
+                <div class="btn-wrap col-group">
+                    <a href="mypage_leave2.html" class="prev-btn">
+                        탈퇴하기
+                   </a>
+                   <a href="javascript:window.history.back();" class="next-btn">
+                        취소
+                   </a>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <!-- footer -->
+        <footer id="footer"></footer>
+        <!-- //footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- aos 스크롤 애니메이션 -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </div>
+</body>
+
+</html>
